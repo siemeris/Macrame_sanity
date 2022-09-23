@@ -67,7 +67,7 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
         </div> 
       </div>
 
-      <div className="maylike-products-wrapper">
+      {/* <div className="maylike-products-wrapper">
           <h2>También puede que te gusten:</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
@@ -76,7 +76,7 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
               ))}
             </div>
           </div>
-      </div>
+      </div> */}
     </div>
   )
 }
