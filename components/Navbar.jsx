@@ -1,79 +1,65 @@
 import React from 'react'
-
+import { AiOutlineShopping } from 'react-icons/ai'
 
 
 const Navbar = () => {
   return (
     <>
 
-			<nav class="nav" id="yui_3_17_2_1_1663426122358_179">
+			<nav className="nav" id="yui_3_17_2_1_1663426122358_179">
 
 					
-					<header class="nav-mobile-header">
+					<header className="nav-mobile-header">
 						
-						{/* <label for="nav-mobile-checkbox" class="nav-mobile-menu-label" onclick="">
-							<span class="svg-fallback">☰</span>
-							<svg width="12" height="10" xmlns="http://www.w3.org/2000/svg" version="1.1"><path class="burger" d="M0,1 12,1" stroke="#ffffff" stroke-width="2"></path><path class="burger" d="M0,5 12,5" stroke="#ffffff" stroke-width="2"></path><path class="burger" d="M0,9 12,9" stroke="#ffffff" stroke-width="2"></path></svg>
+						{/* <label for="nav-mobile-checkbox" className="nav-mobile-menu-label" onclick="">
+							<span className="svg-fallback">☰</span>
+							<svg width="12" height="10" xmlns="http://www.w3.org/2000/svg" version="1.1"><path className="burger" d="M0,1 12,1" stroke="#ffffff" stroke-width="2"></path><path className="burger" d="M0,5 12,5" stroke="#ffffff" stroke-width="2"></path><path className="burger" d="M0,9 12,9" stroke="#ffffff" stroke-width="2"></path></svg>
 						</label> */}
 
 					</header>
 
-					<div class="nav-container primary-wrapper loaded" id="yui_3_17_2_1_1663426122358_178">
+					<div className="nav-container primary-wrapper loaded" id="yui_3_17_2_1_1663426122358_178">
 
 
 
 
-						<ul class="nav-list" data-content-field="navigation-mainNav" id="yui_3_17_2_1_1663426122358_177">
+						<ul className="nav-list" data-content-field="navigation-mainNav" id="yui_3_17_2_1_1663426122358_177">
 
 
-
-
-
-
-							<li class="nav-item ">
-								<a href="/" class="nav-link">
-									<span class="nav-link-text">GALLERY</span>
+							<li className="nav-item ">
+								<a href="/" className="nav-link">
+									<span className="nav-link-text">GALLERY</span>
 								</a>
 							</li>
 
 
-
-
-							<li class="nav-item " id="yui_3_17_2_1_1663426122358_176">
-								<a href="/products" class="nav-link" id="yui_3_17_2_1_1663426122358_175">
-									<span class="nav-link-text">SHOP</span>
+							<li className="nav-item " id="yui_3_17_2_1_1663426122358_176">
+								<a href="/products" className="nav-link" id="yui_3_17_2_1_1663426122358_175">
+									<span className="nav-link-text">SHOP</span>
 								</a>
 							</li>
 
 
-
-
-							<li class="nav-item ">
-								<a href="/about" class="nav-link">
-									<span class="nav-link-text">ABOUT</span>
+							<li className="nav-item ">
+								<a href="/about" className="nav-link">
+									<span className="nav-link-text">ABOUT</span>
 								</a>
 							</li>
 
 
-
-
-
-
-
-
-
-
-
-							<li class="nav-item  active-link">
-								<a href="/contact" class="nav-link">
-									<span class="nav-link-text">CONTACT</span>
+							<li className="nav-item  active-link">
+								<a href="/contact" className="nav-link">
+									<span className="nav-link-text">CONTACT</span>
 								</a>
 							</li>
 
 
 
 						</ul>
-
+                        <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
+        <AiOutlineShopping />
+        <span className="cart-item-qty">1</span>
+      </button>
 
 					</div>
 
