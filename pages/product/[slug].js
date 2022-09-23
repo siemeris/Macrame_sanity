@@ -3,12 +3,12 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
-// import { useStateContext } from '../../context/StateContext';
+import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
 const { image, name, details, price } = product;
 const [index, setIndex] = useState(0);
-//   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
 //   const handleBuyNow = () => {
 //     onAdd(product, qty);
@@ -54,11 +54,11 @@ const [index, setIndex] = useState(0);
           <p className="price">{price}€</p>
           <div className="quantity">
             <h3>Cantidad:</h3>
-            {/* <p className="quantity-desc">
+            <p className="quantity-desc">
               <span className="minus" onClick={decQty}><AiOutlineMinus /></span>
               <span className="num">{qty}</span>
               <span className="plus" onClick={incQty}><AiOutlinePlus /></span>
-            </p> */}
+            </p>
           </div>
           <div className="buttons">
             <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
@@ -68,7 +68,7 @@ const [index, setIndex] = useState(0);
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2>También te puede interesar:</h2>
+          <h2>También puede que te gusten:</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (
