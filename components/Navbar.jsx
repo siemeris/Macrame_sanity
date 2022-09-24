@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineShopping } from 'react-icons/ai'
+import Link from "next/link"
 
 import { Cart } from "./";
 import { useStateContext } from '../context/StateContext';
@@ -31,30 +32,30 @@ const Navbar = () => {
 
 
 							<li className="nav-item ">
-								<a href="/" className="nav-link">
+								<Link href="/" className="nav-link">
 									<span className="nav-link-text">GALLERY</span>
-								</a>
+								</Link>
 							</li>
 
 
 							<li className="nav-item " id="yui_3_17_2_1_1663426122358_176">
-								<a href="/products" className="nav-link" id="yui_3_17_2_1_1663426122358_175">
+								<Link href="/products" className="nav-link" id="yui_3_17_2_1_1663426122358_175">
 									<span className="nav-link-text">SHOP</span>
-								</a>
+								</Link>
 							</li>
 
 
 							<li className="nav-item ">
-								<a href="/about" className="nav-link">
+								<Link href="/about" className="nav-link">
 									<span className="nav-link-text">ABOUT</span>
-								</a>
+								</Link>
 							</li>
 
 
 							<li className="nav-item  active-link">
-								<a href="/contact" className="nav-link">
+								<Link href="/contact" className="nav-link">
 									<span className="nav-link-text">CONTACT</span>
-								</a>
+								</Link>
 							</li>
 
 
