@@ -10,11 +10,11 @@ const { image, name, details, price } = product;
 const [index, setIndex] = useState(0);
 const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
-//   const handleBuyNow = () => {
-//     onAdd(product, qty);
+   const handleBuyNow = () => {
+     onAdd(product, qty);
 
-//     setShowCart(true);
-//   }
+     setShowCart(true);
+   }
 
   return (
     <div> 
@@ -62,12 +62,12 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
           </div>
           <div className="buttons">
             <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-            {/* <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button> */}
+            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
           </div>
         </div> 
       </div>
 
-      {/* <div className="maylike-products-wrapper">
+      <div className="maylike-products-wrapper">
           <h2>También puede que te gusten:</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
@@ -76,7 +76,7 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
               ))}
             </div>
           </div>
-      </div> */}
+      </div> 
     </div>
   )
 }
