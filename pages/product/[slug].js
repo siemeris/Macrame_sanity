@@ -43,7 +43,8 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
               <AiFillStar />
               <AiFillStar />
               <AiFillStar />
-              <AiOutlineStar />
+              <AiFillStar />
+              {/* <AiOutlineStar /> */}
             </div>
             <p>
               (20)
@@ -61,8 +62,8 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
             </p>
           </div>
           <div className="buttons">
-            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Añadir a la Cesta</button>
+            <button type="button" className="buy-now" onClick={handleBuyNow}>Comprar Ahora</button>
           </div>
         </div> 
       </div>
