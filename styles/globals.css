@@ -11,6 +11,7 @@
   letter-spacing: 3.02px;
   line-height: 1.3em;
   text-align: center;
+  color: var(--bs-body-color)
 }
 
 .nav-link, .catnav-link, .footernav-link {
@@ -41,6 +42,9 @@ ul {
 
 .nav-item, .catnav-item, .footernav-item {
   display: inline-block;
+}
+.nav-item{
+  cursor: pointer;
 }
 
 .site-title {
@@ -120,7 +124,7 @@ width: 100%;
 }
 .marquee {
   position: relative;
-  height: 400px;
+  height: 460px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -129,7 +133,7 @@ width: 100%;
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 15s linear infinite;
+  animation: marquee 30s linear infinite;
   width: 180%;
 }
 .track:hover {
@@ -183,10 +187,10 @@ width: 100%;
   width: 100%;
 }
 .product-card{
- cursor: pointer;
+  cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
- color: #324d67;
+  color: #324d67;
 
 }
 .product-card:hover{
@@ -383,6 +387,11 @@ text-align: end;
   font-size: 30px;
   display: flex;
   gap: 10px;
+  color: var(--bs-body-color)
+}
+
+.icons {
+  cursor: pointer;
 }
  .cart-heading{
   display: flex;
@@ -605,7 +614,7 @@ padding: 30px 65px;
 }
 .quantity-desc{
   border: 1px solid gray;
-padding: 6px;
+  padding: 6px;
 }
 .quantity-desc span{
   font-size: 16px;

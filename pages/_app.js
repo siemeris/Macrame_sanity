@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css"
 import { Toaster } from "react-hot-toast";
 import '../styles/globals.css'
 import { Layout } from '../components';
