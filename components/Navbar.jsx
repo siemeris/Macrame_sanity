@@ -4,6 +4,7 @@ import Link from "next/link"
 
 import { Cart } from "./";
 import { useStateContext } from '../context/StateContext';
+import { Contact } from './';
 
 
 const Navbar = () => {
@@ -28,13 +29,14 @@ const Navbar = () => {
 
 
 
-					<ul className="nav-list" data-content-field="navigation-mainNav" id="yui_3_17_2_1_1663426122358_177">
-
+					<ul className="nav-list ps-0" data-content-field="navigation-mainNav" id="yui_3_17_2_1_1663426122358_177">
 
 						<li className="nav-item active-link">
-							<Link href="/" className="nav-link">
-								<span className="nav-link-text me-5">GALERÍA </span>
-							</Link>
+							<button type="button" className="nav-link" href="/">
+								<Link href="/">
+								<span className="nav-link-text">GALERÍA </span>
+								</Link>
+							</button>
 						</li>
 						{"  "}
 						{/* <li className="nav-item " id="yui_3_17_2_1_1663426122358_176">
@@ -52,33 +54,47 @@ const Navbar = () => {
 						{"  "}
 
 						<li className="nav-item">
-							<Link href="/contact" className="nav-link">
+							<button  type="button" className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								<span className="nav-link-text">CONTACTO</span>
-							</Link>
+							</button>
 						</li>
 
-						<button type="button" className="cart-icon position-absolute top-0 end-0 me-4 mt-1" onClick={() => setShowCart(true)}>
-						<AiOutlineShopping />
-						<span className="cart-item-qty">{totalQuantities}</span>
-					</button>
-					{showCart && <Cart />}
+
 
 					</ul>
-					
-
+					<button type="button" className="cart-icon position-absolute top-0 end-0 me-4 mt-1" onClick={() => setShowCart(true)}>
+							<AiOutlineShopping />
+							<span className="cart-item-qty">{totalQuantities}</span>
+						</button>
+						{showCart && <Cart />}
 				</div>
-
-				
 
 			</nav>
 			<div className="p-1 text-center">
-{/* <div style={{ backgroundImage: `url(${background})` }}> */}
-      
-    
-    <h1 className="site-title mb-3">Estiesta Macramé</h1>
-    <p className="site-tagline mb-3">Hecho a mano desde la Sierra de Madrid</p>
-  
-  </div>
+				{/* <div style={{ backgroundImage: `url(${background})` }}> */}
+
+
+				<h1 className="site-title mb-3">Estiesta Macramé</h1>
+				<p className="site-tagline mb-3">Hecho a mano desde la Sierra de Madrid</p>
+			</div>
+
+			<div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div className="modal-dialog">
+					<div className="modal-content">
+						<div className="modal-header">
+							<h2 className="modal-title" id="exampleModalLabel">Contáctame</h2>
+							<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div className="modal-body">
+							<Contact />
+						</div>
+						{/* <div className="modal-footer">
+							<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<button type="button" className="btn btn-primary">Save changes</button>
+						</div> */}
+					</div>
+				</div>
+			</div>
 		</>
 	)
 }

@@ -11,7 +11,8 @@
   letter-spacing: 3.02px;
   line-height: 1.3em;
   text-align: center;
-  color: var(--bs-body-color)
+  color: var(--bs-body-color);
+  
 }
 
 .nav-link, .catnav-link, .footernav-link {
@@ -20,6 +21,10 @@
   color: #000;
   opacity: 1 !important;
   text-decoration: none;
+  background-color: white;
+  border: white;
+  letter-spacing: 4px;
+
 }
 
 .primary-wrapper {
@@ -124,7 +129,7 @@ width: 100%;
 }
 .marquee {
   position: relative;
-  height: 460px;
+  height: 470px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -591,12 +596,14 @@ padding: 30px 65px;
   width: 200px;
    transform: scale(1, 1);
   transition: transform 0.5s ease;
+  border-radius: 20px;
 }
 .buttons .add-to-cart:hover{
   transform:scale(1.1,1.1)
 }
 .buttons .buy-now{
   width: 200px;
+  border-radius: 20px;
 
   padding: 10px 20px;
   background-color: #bd7336be;
