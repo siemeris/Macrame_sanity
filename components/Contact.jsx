@@ -1,7 +1,79 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from "next/link"
 
 const Contact = () => {
+
+    const [fullname, setFullname] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
+    
+    // const handleValidation = () => {
+    //     let tempErrors = {};
+    //     let isValid = true;
+    
+    //     if (fullname.length <= 0) {
+    //       tempErrors["fullname"] = true;
+    //       isValid = false;
+    //     }
+    //     if (email.length <= 0) {
+    //       tempErrors["email"] = true;
+    //       isValid = false;
+    //     }
+    //     if (subject.length <= 0) {
+    //       tempErrors["subject"] = true;
+    //       isValid = false;
+    //     }
+    //     if (message.length <= 0) {
+    //       tempErrors["message"] = true;
+    //       isValid = false;
+    //     }
+    
+    //     setErrors({ ...tempErrors });
+    //     console.log("errors", errors);
+    //     return isValid;
+    //   };
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        // let isValidForm = handleValidation();
+    
+         
+          const res = await fetch("/api/sendgrid", {
+            body: JSON.stringify({
+              email: email,
+              fullname: fullname,
+              subject: subject,
+              message: message,
+            }),
+            headers: {
+              "Content-Type": "application/json",
+            },
+            method: "POST",
+          });
+    
+          const { error } = await res.json();
+          if (error) {
+            console.log(error);
+            return;
+          }
+        console.log(fullname, email, subject, message);
+      };
+
+
+
+
+
   return (
     <div>
         <section className="mb-4">
@@ -24,7 +96,11 @@ const Contact = () => {
                 <div className="col-md-6">
                     <div className="md-form mb-0">
                         <label htmlFor="name" className="">Nombre:</label>
-                        <input type="text" id="name" name="name" className="form-control"/>
+                        <input type="text" id="name" name="name" className="form-control" value={fullname}
+            onChange={(e) => {
+              setFullname(e.target.value);
+            }}/>
+            
                         
                     </div>
                 </div>
@@ -33,7 +109,10 @@ const Contact = () => {
                 <div className="col-md-6">
                     <div className="md-form mb-0">
                         <label htmlFor="email" className="">E-mail:</label>
-                        <input type="text" id="email" name="email" className="form-control"/>
+                        <input type="text" id="email" name="email" className="form-control" value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}/>
                         
                     </div>
                 </div>
@@ -47,7 +126,10 @@ const Contact = () => {
                 <div className="col-md-12">
                     <div className="md-form mb-0">
                         <label htmlFor="subject" className="">Asunto:</label>
-                        <input type="text" id="subject" name="subject" className="form-control"/>
+                        <input type="text" id="subject" name="subject" className="form-control" value={subject}
+            onChange={(e) => {
+              setSubject(e.target.value);
+            }}/>
                         
                     </div>
                 </div>
@@ -62,7 +144,10 @@ const Contact = () => {
 
                     <div className="md-form">
                         <label htmlFor="message">Mensaje:</label>
-                        <textarea type="text" id="message" name="message" rows="3" className="form-control md-textarea"></textarea>
+                        <textarea type="text" id="message" name="message" rows="3" className="form-control md-textarea" value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}></textarea>
                         
                     </div>
 
@@ -93,7 +178,7 @@ const Contact = () => {
 
 
         <div className="text-center text-md-left">
-            <a className="btn btn-primary" onClick="document.getElementById('contact-form').submit();">Enviar</a>
+            <a className="btn btn-primary" onClick={handleSubmit}>Enviar</a>
         </div>
         <div className="status"></div>
     </div>

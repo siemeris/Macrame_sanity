@@ -11,6 +11,7 @@
   "dependencies": {
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
+    "@sendgrid/mail": "^7.7.0",
     "@stripe/stripe-js": "^1.38.1",
     "bootstrap": "^5.2.1",
     "canvas-confetti": "^1.5.1",
