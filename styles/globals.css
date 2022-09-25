@@ -210,6 +210,7 @@ width: 100%;
 
 .product-name{
   font-weight: 500;
+  font-family: Roboto Mono,monospace;
 }
 .product-price{
   font-weight: 800;
@@ -556,7 +557,20 @@ padding: 30px 65px;
 
 .product-detail-desc h4{
   margin-top: 10px;
+  font-family: Roboto Mono,monospace;
 }
+
+.product-detail-desc h2{
+  font-family: Roboto Mono,monospace;
+}
+
+.product-detail-desc h3{
+  font-family: Roboto Mono,monospace;
+}
+
+
+
+
 .product-detail-desc p{
   margin-top: 10px;
 }
@@ -569,6 +583,7 @@ padding: 30px 65px;
   font-size: 26px;
   margin-top: 30px;
   color:#bd7336be;
+  
 }
 .price .old-price, .product-price .old-price, .price .old-price{
   color: gray;
@@ -648,7 +663,7 @@ padding: 30px 65px;
   text-align: center;
   margin: 50px;
   color: #324d67;
-
+  font-family: Roboto Mono,monospace;
   font-size: 28px;
 }
 .maylike-products-container{

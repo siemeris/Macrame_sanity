@@ -32,7 +32,7 @@ const Navbar = () => {
 					<ul className="nav-list ps-0" data-content-field="navigation-mainNav" id="yui_3_17_2_1_1663426122358_177">
 
 						<li className="nav-item active-link">
-							<button type="button" className="nav-link" href="/">
+							<button type="button" className="nav-link">
 								<Link href="/">
 								<span className="nav-link-text">GALERÍA </span>
 								</Link>

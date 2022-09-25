@@ -36,7 +36,7 @@ const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
         </div>
 
         <div className="product-detail-desc">
-          <h1>{name}</h1>
+          <h2>{name}</h2>
           <div className="reviews">
             <div>
               <AiFillStar />
