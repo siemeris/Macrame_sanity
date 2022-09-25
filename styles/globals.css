@@ -1,3 +1,50 @@
+.counter {
+  width: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter input {
+  width: 50px;
+  border: 1px;
+  line-height: 35px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+  appearance: none;
+  outline: 0;
+  border-color: #bd7336be;
+  border-left:0;
+}
+.counter button {
+  display: block;
+  font-size: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: white ;
+  user-select: none;
+  
+  border: 1px;
+  line-height: 35px;
+  border-color: #bd7336be;
+  background-color: #bd73368b;
+}
+
+.counter-down{
+  border-radius: 20px 0px 0px 20px;
+}
+
+.counter-up{
+  border-radius: 0px 20px 20px 0px;
+}
+
+
+
+
+
+
 .nav, .catnav, .footernav {
   font-family: "museo-sans",sans-serif;
   font-size: 12px;

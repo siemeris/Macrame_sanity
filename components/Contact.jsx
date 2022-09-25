@@ -18,12 +18,12 @@ const Contact = () => {
         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
            
-            <div className="row">
+            <div className="row mb-3">
 
                 
                 <div className="col-md-6">
                     <div className="md-form mb-0">
-                        <label for="name" className="">Nombre:</label>
+                        <label htmlFor="name" className="">Nombre:</label>
                         <input type="text" id="name" name="name" className="form-control"/>
                         
                     </div>
@@ -32,7 +32,7 @@ const Contact = () => {
                 
                 <div className="col-md-6">
                     <div className="md-form mb-0">
-                        <label for="email" className="">E-mail:</label>
+                        <label htmlFor="email" className="">E-mail:</label>
                         <input type="text" id="email" name="email" className="form-control"/>
                         
                     </div>
@@ -43,17 +43,17 @@ const Contact = () => {
    
 
            
-            <div className="row">
+            <div className="row mb-3">
                 <div className="col-md-12">
                     <div className="md-form mb-0">
-                        <label for="subject" className="">Asunto:</label>
+                        <label htmlFor="subject" className="">Asunto:</label>
                         <input type="text" id="subject" name="subject" className="form-control"/>
                         
                     </div>
                 </div>
             </div>
       
-
+           
             
             <div className="row">
 
@@ -61,7 +61,7 @@ const Contact = () => {
                 <div className="col-md-12">
 
                     <div className="md-form">
-                        <label for="message">Mensaje:</label>
+                        <label htmlFor="message">Mensaje:</label>
                         <textarea type="text" id="message" name="message" rows="3" className="form-control md-textarea"></textarea>
                         
                     </div>
@@ -93,7 +93,7 @@ const Contact = () => {
 
 
         <div className="text-center text-md-left">
-            <a className="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            <a className="btn btn-primary" onClick="document.getElementById('contact-form').submit();">Enviar</a>
         </div>
         <div className="status"></div>
     </div>
