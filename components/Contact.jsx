@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from "next/link"
+import { toast } from 'react-hot-toast';
 
 const Contact = () => {
 
@@ -68,6 +69,12 @@ const Contact = () => {
             return;
           }
         console.log(fullname, email, subject, message);
+        toast.success(`Mensaje enviado`);
+                // Reset form fields
+                setFullname("");
+                setEmail("");
+                setMessage("");
+                setSubject("");
       };
 
 
@@ -87,7 +94,7 @@ const Contact = () => {
 
     
     <div className="col-md-12 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <form id="contact-form" name="contact-form">
 
            
             <div className="row mb-3">
@@ -166,8 +173,6 @@ const Contact = () => {
 
             <li><i className="fas fa-phone mt-4 fa-2x"></i>
                 <p>Link a Etsy: <Link href="https://www.etsy.com/shop/estiestamacrame">etsy.com/shop/EstiestaMacrame</Link></p>
-                
-
             </li>
 
             <li><i className="fas fa-envelope mt-4 fa-2x"></i>
@@ -178,7 +183,7 @@ const Contact = () => {
 
 
         <div className="text-center text-md-left">
-            <a className="btn btn-primary" onClick={handleSubmit}>Enviar</a>
+            <a className="btn btn-primary" data-bs-dismiss="modal" onClick={handleSubmit}>Enviar</a>
         </div>
         <div className="status"></div>
     </div>
