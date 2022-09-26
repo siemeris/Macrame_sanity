@@ -32,13 +32,13 @@ const Navbar = () => {
 					<ul className="nav-list ps-0" data-content-field="navigation-mainNav" id="yui_3_17_2_1_1663426122358_177">
 
 						<li className="nav-item active-link">
-							<button type="button" className="nav-link">
+							<button type="button" className="nav-link pe-0">
 								<Link href="/">
 								<span className="nav-link-text">GALERÍA </span>
 								</Link>
 							</button>
 						</li>
-						{"  "}
+
 						{/* <li className="nav-item " id="yui_3_17_2_1_1663426122358_176">
 							<Link href="/products" className="nav-link" id="yui_3_17_2_1_1663426122358_175">
 								<span className="nav-link-text">TIENDA</span>
@@ -51,7 +51,7 @@ const Navbar = () => {
 								<span className="nav-link-text">ACERCA DE</span>
 							</Link>
 						</li> */}
-						{"  "}
+
 
 						<li className="nav-item">
 							<button  type="button" className="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
