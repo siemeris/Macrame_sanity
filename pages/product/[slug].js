@@ -55,16 +55,16 @@ const ProductDetails = ({ product, products }) => {
           <p className="price">{price}€</p>
           <div className="quantity">
             <h3>Cantidad:</h3>
-            <p className="">
+            {/* <p className=""> */}
               {/* <span className="minus" onClick={decQty}><AiOutlineMinus /></span>
               <span className="num">{qty}</span>
               <span className="plus" onClick={incQty}><AiOutlinePlus /></span> */}
                         <div className="counter">
         <button className="counter-down rounded-left" onClick={decQty}>-</button>
-        <input type="text" value={qty} />
+        <span type="text" >{qty}</span>
         <button className="counter-up" onClick={incQty}>+</button>
       </div>
-            </p>
+            {/* </p> */}
 
 
           </div>
