@@ -16,7 +16,7 @@ Main characteristics:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
    
-![image](https://raw.githubusercontent.com/siemeris/Macrame_sanity/f8c80c9c426b423f642a404abd00a4468fba4229/assets/Captura%20de%20Pantalla%202022-09-26%20a%20las%2011.26.50.png?token=GHSAT0AAAAAABT6HSAHEYR7GUMDXCGQXMRMYZRO5NQ)
+![image](https://raw.githubusercontent.com/siemeris/assets/main/Captura%20de%20Pantalla%202022-09-26%20a%20las%2012.07.40.png)
 ![image](https://raw.githubusercontent.com/siemeris/Macrame_sanity/f8c80c9c426b423f642a404abd00a4468fba4229/assets/Captura%20de%20Pantalla%202022-09-26%20a%20las%2011.48.48.png?token=GHSAT0AAAAAABT6HSAHHXLMYOPA6VJAVGUQYZRO72A)
 ![image](https://raw.githubusercontent.com/siemeris/Macrame_sanity/f8c80c9c426b423f642a404abd00a4468fba4229/assets/Captura%20de%20Pantalla%202022-09-26%20a%20las%2011.49.03.png?token=GHSAT0AAAAAABT6HSAHQV7US3MQD7YP7Z3KYZRPBCQ)
 ![image](https://raw.githubusercontent.com/siemeris/Macrame_sanity/f8c80c9c426b423f642a404abd00a4468fba4229/assets/Captura%20de%20Pantalla%202022-09-26%20a%20las%2011.49.21.png?token=GHSAT0AAAAAABT6HSAHHYWEE4KLQYQ5ELUUYZRPBWA)
